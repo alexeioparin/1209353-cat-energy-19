@@ -31,6 +31,75 @@
         </nav>
       </div>
     </header>
+    <main class="form-page">
+      <h2 class="form-page__title">Подбор программы</h2>
+      <form action="index.html" method="post" class="main-form">
+        <fieldset class="main-form__block">
+          <legend class="main-form__legend-title">Заполните анкету и мы подберем программу питания для вашего кота</legend>
+          <label class="main-form__label">
+            Имя:*
+            <input type="text" name="name" value="" class="main-form__input" placeholder="Барсик">
+          </label>
+          <label class="main-form__label">
+            Вес (кг):*
+            <input type="text" name="weight" value="" class="main-form__input" placeholder="7">
+          </label>
+          <label class="main-form__label">
+            Возраст (лет):
+            <input type="text" name="age" value="" class="main-form__input" placeholder="7">
+          </label>
+        </fieldset>
+        <fieldset class="main-form__block-radio">
+          <legend class="visually-hidden">Тип диеты</legend>
+          <input type="radio" name="diet" value="slim" id="radio1" checked class="main-block__radio">
+          <label for="radio1" class="main-form__label">Похудение</label>
+          <input type="radio" name="diet" value="slim" id="radio2" class="main-block__radio">
+          <label for="radio2" class="main-form__label">Набор массы</label>
+          <input type="radio" name="diet" value="slim" id="radio3" class="main-block__radio">
+          <label for="radio3" class="main-form__label">Не знаю (нужен ваш совет)</label>
+        </fieldset>
+        <fieldset class="main-form__block">
+          <legend class="main-form__legend">Контактные данные (владельца кота)</legend>
+          <label class="main-form__label">
+            E-mail:*
+            <input type="email" name="" value="" class="main-form__input" placeholder="kuklachev@gmail.com">
+          </label>
+          <label  class="main-form__label">
+            Телефон:*
+            <input type="tel" name="" value="" class="main-form__input" placeholder="8 (960) 900-60-90">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="main-form__legend">Комментарий</legend>
+          <textarea name="name" rows="8" cols="80"  class="main-form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend class="main-form__legend">Дополнительно</legend>
+          <input type="checkbox" name="" value="" id="check1" class="main-form__checkbox" checked>
+          <label for="check1" class="main-form__label">Сахарозаменитель</label>
+          <input type="checkbox" name="" value="" id="check2" class="main-form__checkbox">
+          <label for="check2" class="main-form__label">Питьевая вода</label>
+          <input type="checkbox" name="" value="" id="check3" class="main-form__checkbox">
+          <label for="check3" class="main-form__label">Молоко</label>
+          <input type="checkbox" name="" value="" id="check4" class="main-form__checkbox">
+          <label for="check4" class="main-form__label">Витамины</label>
+        </fieldset>
+        <input type="submit" name="" value="Отправить заявку" class="button main-form__submit">
+        <p class="main-form__add">* — Обязательные поля</p>
+      </form>
+      <div class="page-map">
+        <div class="wrapper">
+          <h2 class="page-map__title visually-hidden">Компания расположена по адресу</h2>
+          <div class="page-map__info">
+            <p class="page-map__invite">приглашаем к сотрудничеству дилеров!</p>
+            <p class="page-map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
+        </div>
+        <a href="#" class="page-map__link">
+          <img src="" alt="" class="page-map__img" width="320" height="360">
+        </a>
+      </div>
+    </main>
     <footer class="page-footer">
       <div class="wrapper">
         <a href="index.html" class="page-footer__logo">
