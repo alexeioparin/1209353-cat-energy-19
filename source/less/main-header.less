@@ -1,6 +1,7 @@
 .main-header {
   padding-top: 30px;
   min-height: 500px;
+  text-align: center;
 }
 
 .main-header__title {
@@ -20,4 +21,19 @@
 
 .main-header__button {
   width: 100%;
+}
+
+@media (min-width: @mid-size) {
+  .main-header {
+    text-align: left;
+    margin-left: 90px;
+  }
+
+  .main-header__title {
+    color: #000000;
+  }
+
+  .main-header__slogan {
+    color: #000000;
+  }
 }

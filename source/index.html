@@ -2,20 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="index-body">
     <header class="page-header">
-      <div class="wrapper">
-        <a href="#" class="page-header__logo page-header__logo--img">
-          <img src="" alt="" width="33" height="38" class="page-header__img">
-        </a>
-        <a href="#" class="page-header__logo page-header__logo--text">
-          <img src="" alt="" width="101" height="18" class="page-header__img">
-        </a>
-        <button type="button" name="button" class="page-header__menu-button"></button>
+      <div class="wrapper wrapper--flex">
+        <div class="page-header__top">
+          <a href="#" class="page-header__logo page-header__logo--img">
+            <img src="img/map-pin.png" alt="" width="33" height="38" class="page-header__img">
+          </a>
+          <a href="#" class="page-header__logo page-header__logo--text">
+            <img src="" alt="" width="101" height="18" class="page-header__img">
+          </a>
+          <button type="button" name="button" class="page-header__menu-button"></button>
+        </div>
         <nav class="page-nav">
           <div class="page-nav__wrapper">
             <ul class="page-nav__menu">
@@ -107,19 +110,25 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="wrapper">
+      <div class="wrapper wrapper--center wrapper--flex">
         <a href="#" class="page-footer__logo">
           <img src="" alt="" width="128" height="24">
         </a>
         <ul class="social-list page-footer__social">
           <li class="social-list__item social-list__item--vk">
-            <a href="#">vkontakte</a>
+            <a href="#">
+              <span>vkontakte</span>
+            </a>
           </li>
           <li class="social-list__item social-list__item--insta">
-            <a href="#">instagram</a>
+            <a href="#">
+              <span>instagram</span>
+            </a>
           </li>
           <li class="social-list__item social-list__item--fb">
-            <a href="#">facebook</a>
+            <a href="#">
+              <span>facebook</span>
+            </a>
           </li>
         </ul>
         <div class="page-footer__bottom">
