@@ -1,3 +1,8 @@
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
 .page-nav__menu {
   font-size: 20px;
   line-height: 20px;
@@ -6,10 +11,22 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: none;
+}
+
+.page-nav__item {
+  margin-left: 36px;
 }
 
 .page-nav__item a {
   text-decoration: none;
   font-family: "Oswald", "Open Sans", sans-serif;
   color: #111111;
+}
+
+@media (min-width: @mid-size) {
+  .page-nav__menu {
+    display: flex;
+    align-items: center;
+  }
 }

@@ -10,3 +10,20 @@
   color: #111111;
   margin: 0;
 }
+
+@media (min-width: @mid-size) {
+  .catalog-main__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @max-size) {
+  .catalog-main__wrapper {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}

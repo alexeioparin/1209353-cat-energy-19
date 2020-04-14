@@ -1,5 +1,10 @@
 .page-main {
   font-family: "Oswald", "Open Sans", sans-serif;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  background: #ffffff url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
+}
+
+@media (min-width: @mid-size) {
+  .page-main {
+    background: none;
+  }
 }
