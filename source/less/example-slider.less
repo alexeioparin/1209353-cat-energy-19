@@ -1,6 +1,27 @@
+.example-slider {
+  text-align: center;
+}
+
+.example-slider__tumblers {
+  display: flex;
+  justify-content: space-between;
+}
+
 .example-slider__tumblers span {
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+}
+
+@media (min-width: @mid-size) {
+  .example-slider {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: @max-size) {
+  .example-slider__wrapper {
+    width: 760px;
+  }
 }

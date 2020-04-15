@@ -17,6 +17,9 @@
 
 .catalog-plus__item {
   border-top: 1px solid #cdcdcd;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog-plus__name {
@@ -34,8 +37,29 @@
   line-height: 14px;
   color: #444444;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-plus__button {
   width: 100%;
+}
+
+@media (min-width: @max-size) {
+  .catalog-plus {
+    width: 900px;
+  }
+
+  .catalog-plus__name {
+    width: 300px;
+  }
+
+  .catalog-plus__description {
+    flex-grow: 1;
+  }
+
+  .catalog-plus__button {
+    width: 245px;
+    margin-left: 40px;
+  }
 }

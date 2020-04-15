@@ -8,6 +8,8 @@
 .page-map__info {
   padding-top: 30px;
   padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-map__invite {
@@ -30,4 +32,23 @@
 .page-map__block {
   width: 320px;
   margin: 0 auto;
+}
+
+@media (min-width: @mid-size) {
+  .page-map__block,
+  .page-map__iframe {
+    width: 768px;
+  }
+}
+
+@media (min-width: @max-size) {
+  .page-map__block,
+  .page-map__iframe {
+    width: 1440px;
+  }
+
+  .page-map__info {
+    position: absolute;
+    background-color: #ffffff;
+  }
 }
