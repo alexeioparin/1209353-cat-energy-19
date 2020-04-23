@@ -2,6 +2,7 @@
   padding-top: 30px;
   min-height: 500px;
   text-align: center;
+  position: relative;
 }
 
 .main-top__title {
@@ -9,7 +10,8 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin-left: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .main-top__slogan {
@@ -17,6 +19,7 @@
   font-size: 14px;
   line-height: 14px;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .main-top__button {
@@ -27,13 +30,51 @@
   .main-top {
     text-align: left;
     margin-left: 90px;
+    min-height: 800px;
   }
 
   .main-top__title {
-    color: #000000;
+    color: #111111;
+    font-size: 60px;
+    line-height: 60px;
+    width: 420px;
+    margin-bottom: 30px;
   }
 
   .main-top__slogan {
-    color: #000000;
+    color: #111111;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+  }
+
+  .main-top__img {
+    position: absolute;
+    z-index: -1;
+    width: 709px;
+    bottom: 20px;
+  }
+
+  .main-top__button {
+    width: 245px;
+    height: 52px;
+  }
+}
+
+@media (min-width: @max-size) {
+  .main-top {
+    min-height: 630px;
+  }
+
+  .main-top__title {
+    margin-top: 110px;
+  }
+
+  .main-top__img {
+    width: 552px;
+    top: 0;
+    right: 200px;
+    bottom: auto;
   }
 }

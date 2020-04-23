@@ -1,6 +1,5 @@
 .wrapper {
-  width: 280px;
-  margin: 0 auto;
+  width: calc(100% - 40px);
   padding: 0 20px;
 
   &--center {
@@ -16,12 +15,17 @@
 
 @media (min-width: @mid-size) {
   .wrapper {
-    width: 708px;
+    width: calc(100% - 60px);
     padding: 0 30px;
 
     &--flex {
       display: flex;
       justify-content: space-between;
+    }
+
+    &--header {
+      width: 38%;
+      padding-right: 0;
     }
 
     &--form {
@@ -32,12 +36,17 @@
 
 @media (min-width: @max-size) {
   .wrapper {
-    width: 1220px;
+    width: calc(100% - 220px);
     padding: 0 110px;
 
     &--flex-max {
       display: flex;
       justify-content: space-between;
+    }
+
+    &--header {
+      width: 38%;
+      padding-right: 0;
     }
   }
 }

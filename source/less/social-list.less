@@ -1,12 +1,24 @@
 .social-list {
   display: flex;
   justify-content: center;
-  padding: 0;
+  list-style: none;
 }
 
 .social-list__item {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 7%;
+  margin-right: 7%;
+  display: flex;
+  align-items: center;
+
+  &:hover path,
+  &:hover circle {
+    fill: #68b738;
+  }
+
+  &:active path,
+  &:active circle {
+    opacity: 0.3;
+  }
 }
 
 .social-list__item span {

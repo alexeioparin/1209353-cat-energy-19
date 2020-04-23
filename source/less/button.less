@@ -1,12 +1,22 @@
 .button {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Oswald", "Open Sans", sans-serif;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
+  text-transform: uppercase;
   background-color: #68b738;
   min-height: 40px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

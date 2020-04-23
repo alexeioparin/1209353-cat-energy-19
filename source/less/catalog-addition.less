@@ -2,6 +2,22 @@
   border: 1px solid #ededed;
   text-align: center;
   padding: 25px 20px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 31px;
+    height: 2px;
+    background-color: #222222;
+    opacity: 0.2;
+    position: absolute;
+    top: 42px;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
 }
 
 .catalog-addition__title {
@@ -11,6 +27,7 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 55px;
 }
 
 .catalog-addition__title + p {
@@ -30,16 +47,50 @@
     background-color: #f2f2f2;
     color: #444444;
   }
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: @mid-size) {
   .catalog-addition {
-    width: 284px;
+    width: 248px;
+    min-height: 432px;
+    margin-bottom: 20px;
+    padding: 38px;
+
+    &::before,
+    &::after {
+      width: 60px;
+      height: 1px;
+      top: 85px;
+      left: calc(50% - 30px);
+    }
+  }
+
+  .catalog-addition__title {
+    font-size: 20px;
+    margin-top: 140px;
+  }
+
+  .catalog-addition__title + p {
+    font-size: 16px;
+    margin-top: 28px;
+  }
+
+  .catalog-addition__button {
+    margin-top: 150px;
   }
 }
 
 @media (min-width: @max-size) {
   .catalog-addition {
-    width: 205px;
+    width: 170px;
+    margin-left: 50px;
   }
 }
