@@ -12,7 +12,8 @@
     background-color: #222222;
     opacity: 0.2;
     position: absolute;
-    top: 42px;
+    top: 41px;
+    left: calc(50% - 15px);
   }
 
   &::before {
@@ -60,31 +61,36 @@
 @media (min-width: @mid-size) {
   .catalog-addition {
     width: 248px;
-    min-height: 432px;
-    margin-bottom: 20px;
+    min-height: 350px;
+    margin-bottom: 3px;
     padding: 38px;
 
     &::before,
     &::after {
       width: 60px;
       height: 1px;
-      top: 85px;
+      top: 82px;
       left: calc(50% - 30px);
     }
   }
 
   .catalog-addition__title {
     font-size: 20px;
-    margin-top: 140px;
+    margin: 0 auto;
+    margin-top: 122px;
+    width: 150px;
   }
 
   .catalog-addition__title + p {
     font-size: 16px;
+    margin: 0 auto;
     margin-top: 28px;
+    width: 170px;
   }
 
   .catalog-addition__button {
-    margin-top: 150px;
+    margin-top: 88px;
+    font-size: 16px;
   }
 }
 

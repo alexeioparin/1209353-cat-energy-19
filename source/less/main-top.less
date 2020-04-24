@@ -1,6 +1,6 @@
 .main-top {
   padding-top: 30px;
-  min-height: 500px;
+  min-height: 472px;
   text-align: center;
   position: relative;
 }
@@ -11,7 +11,7 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .main-top__slogan {
@@ -19,7 +19,8 @@
   font-size: 14px;
   line-height: 14px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  text-transform: uppercase;
 }
 
 .main-top__button {
@@ -31,6 +32,7 @@
     text-align: left;
     margin-left: 90px;
     min-height: 800px;
+    margin-top: 22px;
   }
 
   .main-top__title {
@@ -38,7 +40,7 @@
     font-size: 60px;
     line-height: 60px;
     width: 420px;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
   }
 
   .main-top__slogan {
@@ -53,26 +55,34 @@
     position: absolute;
     z-index: -1;
     width: 709px;
-    bottom: 20px;
+    bottom: 0;
   }
 
-  .main-top__button {
+  a.main-top__button {
     width: 245px;
     height: 52px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: @max-size) {
   .main-top {
-    min-height: 630px;
+    min-height: 600px;
+    margin-left: 80px;
   }
 
   .main-top__title {
-    margin-top: 110px;
+    margin-top: 55px;
+  }
+
+  .main-top__slogan {
+    margin-bottom: 51px;
   }
 
   .main-top__img {
     width: 552px;
+    height: 500px;
     top: 0;
     right: 200px;
     bottom: auto;
