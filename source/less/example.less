@@ -1,6 +1,6 @@
 .example {
   background-color: #f2f2f2;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 35px;
   border-top: solid 1px #f2f2f2;
 }
@@ -25,16 +25,32 @@
   line-height: 18px;
   color: #444444;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 22px;
+  margin-bottom: 25px;
+  width: 267px;
+}
+
+.example__indicators-wrapper {
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .example__indicators {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 33px;
 }
 
 .example__indicator {
   text-align: center;
+  width: 44%;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .example__indicator-unit {
@@ -44,6 +60,12 @@
   font-weight: 400;
   color: #444444;
   margin: 0;
+  position: absolute;
+  width: 57px;
+  top: 85%;
+  z-index: 2;
+  background-color: #f2f2f2;
+  padding: 0 15px;
 }
 
 .example__indicator-value {
@@ -67,6 +89,7 @@
 @media (min-width: @mid-size) {
   .example {
     background-color: #ffffff;
+    padding-top: 42px;
   }
 
   .example__wrapper {
@@ -74,22 +97,100 @@
     padding: 0 30px;
   }
 
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    margin-top: 65px;
+    margin-bottom: 54px;
+    width: 97%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .example__indicators-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 86px;
+  }
+
+  .example__indicators {
+    width: 51.5%;
+    margin-bottom: 0;
+  }
+
+  .example__indicator {
+    min-height: 65px;
+    padding-bottom: 5px;
+  }
+
+  .example__indicator-unit {
+    background-color: #ffffff;
+    width: auto;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 8px;
+    top: 87%;
+  }
+
+  .example__indicator-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__cost {
+    font-size: 20px;
+    line-height: 30px;
+    width: 26%;
+    padding-top: 5px;
+    text-align: right;
   }
 }
 
 @media (min-width: @max-size) {
   .example {
-    background: linear-gradient(0deg, #f2f2f2 70%, #ffffff 70%);
+    background: linear-gradient(0deg, #f2f2f2 77%, #ffffff 77%);
     display: flex;
     justify-content: space-between;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 23px;
   }
 
   .example__wrapper {
     width: 620px;
     padding: 0 110px;
+  }
+
+  .example__title {
+    margin-top: 45px;
+  }
+
+  .example__description {
+    margin-top: 146px;
+    margin-bottom: 70px;
+    width: 95%;
+  }
+
+  .example__indicators {
+    width: 80%;
+  }
+
+  .example__indicators-wrapper {
+    margin-bottom: 0;
+  }
+
+  .example__indicator-unit {
+    background-color: #f2f2f2;
+  }
+
+  .example__cost {
+    width: 71%;
+    padding-top: 54px;
+    display: flex;
+    justify-content: space-between;
   }
 }

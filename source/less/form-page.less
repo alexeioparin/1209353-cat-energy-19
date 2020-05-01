@@ -1,6 +1,6 @@
 .form-page {
   font-family: "Oswald", "Open Sans", sans-serif;
-  padding-top: 10px;
+  padding-top: 15px;
   text-align: left;
 }
 
@@ -10,5 +10,22 @@
   font-weight: 400;
   color: #111111;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: @mid-size) {
+  .form-page {
+    padding-top: 53px;
+  }
+
+  .form-page__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @max-size) {
+  .form-page {
+    padding-top: 70px;
+  }
 }
