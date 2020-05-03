@@ -32,12 +32,19 @@
   align-items: center;
 }
 
-.example-slider__range-fat {
+.example-slider__range-fat,
+.example-slider__range-slim {
   width: 35px;
   height: 6px;
   margin: 5px;
   background-color: #68b738;
   border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.example-slider__range-slim {
+  display: none;
 }
 
 @media (min-width: @mid-size) {
@@ -80,9 +87,10 @@
   }
 
   .example-slider__range-fat {
+    padding: 4px;
     position: absolute;
     top: -18px;
-    left: 50%;
+    left: calc(50% - 20px);
     width: 8px;
     height: 8px;
     background-color: #68b738;

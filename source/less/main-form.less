@@ -35,7 +35,25 @@
   margin-top: 20px;
   margin-bottom: 10px;
   padding: 0;
-  padding-bottom: 11px;
+  padding-bottom: 8px;
+}
+
+.main-form__radio,
+.main-form__checkbox {
+  display: none;
+}
+
+.main-form__radio:checked + label::before {
+  background-color: #68b738;
+  box-shadow: 0 0 1px 8px #ffffff inset;
+}
+
+
+.main-form__checkbox:checked + label::before {
+  content: url("../img/icon-tick.svg");
+  width: 20px;
+  height: 20px;
+  padding: 6px 4px 2px;
 }
 
 .main-form__block-contacts {
@@ -85,7 +103,7 @@
   padding: 0;
 
   legend {
-    margin-bottom: 32px;
+    margin-bottom: 34px;
     position: relative;
 
     &::after {
@@ -98,22 +116,11 @@
       right: -235px;
     }
   }
-
-  .main-form__label {
-    margin-bottom: 17px;
-  }
-
-  .main-form__block-wrapper {
-    padding-left: 25px;
-  }
 }
 
 .main-form__block-wrapper {
   width: 100%;
   display: flex;
-  margin-top: 8px;
-  margin-bottom: 2px;
-  padding-left: 15px;
 }
 
 .main-form__label {
@@ -129,7 +136,30 @@
   margin-bottom: 14px;
 
   &--radio {
-    margin-left: 10px;
+    justify-content: flex-start;
+    margin-bottom: 13px;
+
+    &::before {
+      content: "";
+      width: 28px;
+      height: 28px;
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+
+  &--checkbox {
+    justify-content: flex-start;
+    margin-bottom: 13px;
+
+    &::before {
+      content: "";
+      width: 28px;
+      height: 28px;
+      border: 1px solid #cdcdcd;
+      margin-right: 15px;
+    }
   }
 }
 
@@ -177,6 +207,7 @@
   padding: 14px;
   width: 90%;
   height: 120px;
+  resize: vertical;
 
   &::placeholder {
     text-transform: uppercase;
@@ -219,7 +250,6 @@
 
   .main-form__block-wrapper {
     display: inline-block;
-    width: 250px;
   }
 
   .main-form__block-main {
@@ -240,6 +270,17 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 0;
+
+    &--radio::before {
+      width: 38px;
+      height: 38px;
+      margin-right: 20px;
+    }
+
+    &--checkbox::before {
+      width: 38px;
+      height: 38px;
+    }
   }
 
   .main-form__input {
@@ -272,20 +313,19 @@
 
   .main-form__block-radio {
     margin-top: 42px;
-
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: none;
 
 
     .wrapper--form {
       margin-left: 71px;
       margin-right: 67px;
-      padding-left: 59px;
       padding-top: 24px;
       padding-right: 0;
+      padding-left: 25px;
       padding-bottom: 10px;
       border: 1px solid #cdcdcd;
-      width: calc(100% - 200px);
+      width: calc(100% - 165px);
     }
 
     input {
@@ -294,8 +334,13 @@
 
     .main-form__label {
       margin-top: 0;
-      margin-bottom: 23px;
+      margin-bottom: 13px;
     }
+  }
+
+  .main-form__radio:checked + label::before {
+    background-color: #68b738;
+    box-shadow: 0 0 1px 10px #ffffff inset;
   }
 
   .main-form__block-contacts {
@@ -374,11 +419,12 @@
 
   .main-form__block-checkbox {
     padding-left: 40px;
+    margin-bottom: 23px;
 
     legend {
       font-size: 36px;
       line-height: 36px;
-      margin-bottom: 60px;
+      margin-bottom: 57px;
 
       &::before {
         position: absolute;
@@ -401,9 +447,14 @@
       }
     }
 
+    .main-form__checkbox:checked + label::before {
+      width: 22px;
+      height: 22px;
+      padding: 8px;
+    }
+
     .main-form__block-wrapper {
-      margin-bottom: 27px;
-      margin-left: 56px;
+      margin-bottom: 12px;
       padding-left: 0;
       width: 41%;
 
@@ -412,10 +463,6 @@
         margin-left: 67px;
       }
     }
-  }
-
-  .main-form__checkbox {
-    display: none;
   }
 
   .main-form__bottom {
@@ -470,19 +517,25 @@
   .main-form__block-radio {
     margin: 0;
     margin-left: 78px;
+    padding-bottom: 20px;
 
     .wrapper {
       margin: 0;
       padding: 0;
-      padding-top: 34px;
-      padding-bottom: 2px;
+      padding-top: 25px;
+      padding-bottom: 13px;
+      align-items: flex-start;
+    }
+
+    .main-form__label {
+      margin-bottom: 12px;
     }
   }
 
   .main-form__block-wrapper {
-    margin-bottom: 10px;
+    margin-bottom: 0;
     margin-top: 0;
-    padding-left: 77px;
+    padding-left: 28px;
   }
 
   .main-form__block-contacts {
@@ -507,7 +560,7 @@
       display: inline-block;
 
       &:last-of-type {
-        margin-left: 39px;
+        margin-left: 37px;
         width: 47%;
       }
     }
@@ -548,11 +601,9 @@
 
   .main-form__block-checkbox {
     padding: 0;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
 
     .main-form__legend {
-      margin-bottom: 68px;
-
       &::before {
         left: -166px;
         width: 60%;
@@ -566,13 +617,17 @@
 
     .main-form__block-wrapper {
       width: 21%;
+      margin-right: 65px;
 
       &:nth-of-type(2n) {
         width: 21.5%;
+        margin-left: 0;
+        margin-right: 60px;
       }
 
       &:last-of-type {
-        width: 10%;
+        width: 15%;
+        margin-right: 0;
       }
     }
   }
