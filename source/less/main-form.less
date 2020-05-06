@@ -101,20 +101,26 @@
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+}
 
-  legend {
-    margin-bottom: 34px;
-    position: relative;
+.main-form__title {
+  margin: 0;
+  margin-bottom: 34px;
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111111;
+  width: 90%;
 
-    &::after {
-      position: absolute;
-      content: "";
-      height: 3px;
-      width: 150%;
-      background-color: #68b738;
-      top: 14px;
-      right: -235px;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #68b738;
+    top: 14px;
+    right: -165px;
   }
 }
 
@@ -420,32 +426,8 @@
   .main-form__block-checkbox {
     padding-left: 40px;
     margin-bottom: 23px;
-
-    legend {
-      font-size: 36px;
-      line-height: 36px;
-      margin-bottom: 57px;
-
-      &::before {
-        position: absolute;
-        content: "";
-        height: 3px;
-        width: 30%;
-        background-color: #68b738;
-        top: 23px;
-        left: -103px;
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        height: 3px;
-        width: 350%;
-        background-color: #68b738;
-        top: 23px;
-        right: -780px;
-      }
-    }
+    display: flex;
+    flex-wrap: wrap;
 
     .main-form__checkbox:checked + label::before {
       width: 22px;
@@ -462,6 +444,34 @@
         width: 39%;
         margin-left: 67px;
       }
+    }
+  }
+
+  .main-form__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+    width: 90%;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 3px;
+      width: 50px;
+      background-color: #68b738;
+      top: 23px;
+      left: -90px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: #68b738;
+      top: 23px;
+      right: -250px;
     }
   }
 
@@ -603,32 +613,34 @@
     padding: 0;
     margin-bottom: 30px;
 
-    .main-form__legend {
-      &::before {
-        left: -166px;
-        width: 60%;
-      }
-
-      &::after {
-        width: 700%;
-        right: -1517px;
-      }
-    }
-
     .main-form__block-wrapper {
       width: 21%;
-      margin-right: 65px;
+      margin-right: 67px;
 
       &:nth-of-type(2n) {
         width: 21.5%;
         margin-left: 0;
-        margin-right: 60px;
+        margin-right: 64px;
       }
 
       &:last-of-type {
         width: 15%;
         margin-right: 0;
       }
+    }
+  }
+
+  .main-form__title {
+    width: 90%;
+
+    &::before {
+      left: -130px;
+      width: 90px;
+    }
+
+    &::after {
+      width: 100%;
+      right: -250px;
     }
   }
 
