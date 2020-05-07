@@ -12,7 +12,11 @@
       <div class="wrapper wrapper--flex wrapper--header">
         <div class="page-header__top page-header__top--nojs">
           <a href="#" class="page-header__logo">
-            <img src="img/logo-mobile.svg" alt="" width="191" height="39" class="page-header__img">
+            <picture>
+              <source media="(min-width:1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="" width="191" height="39" class="page-header__img">
+            </picture>
           </a>
           <button type="button" name="button" class="page-header__menu-button page-header__menu-button--nojs page-header__menu-button--closed"></button>
         </div>
@@ -86,12 +90,12 @@
               <h2 class="example-slider__title visually-hidden">Наглядный пример</h2>
               <img src="img/before-mobile@1x.png" alt="" class="example-slider__img" width="320" height="240">
               <div class="example-slider__tumblers">
-                <span>Было</span>
+                <button class="example-slider__button">Было</button>
                 <div class="example-slider__range">
                   <button class="example-slider__range-fat"></button>
                   <button class="example-slider__range-slim"></button>
                 </div>
-                <span>Стало</span>
+                <button class="example-slider__button">Стало</button>
               </div>
             </div>
           </div>
