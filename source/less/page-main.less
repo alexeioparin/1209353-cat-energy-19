@@ -10,6 +10,13 @@
     height: 305px;
     z-index: -1;
   }
+
+  @media (min-resolution: @retina) {
+    &::before {
+      background: #63a73a url("../img/index-background-mobile@2x.jpg") no-repeat 50% 0;
+      background-size: 100% auto;
+    }
+  }
 }
 
 @media (min-width: @mid-size) {
