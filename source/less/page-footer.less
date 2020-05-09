@@ -1,14 +1,20 @@
 .page-footer {
   background-color: #f2f2f2;
   min-width: 320px;
+  min-height: 242px;
   margin: 0 auto;
   padding-top: 10px;
 }
 
 .page-footer__logo {
   display: block;
-  padding: 30px 0;
+  padding: 32px 0;
+  padding-bottom: 27px;
   border-bottom: 1px solid #cdcdcd;
+
+  img {
+    height: 24px;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -21,7 +27,8 @@
 
 .page-footer__social {
   margin: 0;
-  padding: 20px 0;
+  padding: 21px 0;
+  padding-right: 10px;
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -49,6 +56,7 @@
   color: #444444;
   text-decoration: none;
   margin-right: 23px;
+  margin-bottom: 3px;
 }
 
 @media (min-width: @mid-size) {
@@ -56,13 +64,41 @@
     min-height: 150px;
     display: flex;
     align-items: center;
+    padding-top: 5px;
   }
 
   .page-footer__logo {
     border: none;
+    padding-top: 13px;
   }
 
   .page-footer__social {
     border: none;
+    padding-top: 0;
+    padding-left: 32px;
+    padding-right: 15px;
+  }
+
+  .page-footer__bottom {
+    padding-top: 0;
+
+    svg {
+      width: 27px;
+      height: 34px;
+    }
+  }
+}
+
+@media (min-width: @max-size) {
+  .page-footer {
+    padding-top: 10px;
+  }
+
+  .page-footer__bottom {
+    padding-bottom: 15px;
+  }
+
+  .page-footer__bottom-icon {
+    padding-top: 3px;
   }
 }

@@ -77,11 +77,15 @@
 
 @media (min-width: @max-size) {
   .page-nav {
-    margin-right: 110px;
+    margin-right: calc(40px + (100% - 1300px) / 2);
   }
 
-  .page-nav__menu a {
-    font-size: 20px;
+  .page-nav__menu {
+    line-height: 25px;
+
+    a {
+      font-size: 20px;
+    }
   }
 
   .page-nav__menu--index a {
@@ -93,6 +97,6 @@
     height: 2px;
     background-color: #ffffff;
     position: absolute;
-    bottom: 7px;
+    bottom: 10px;
   }
 }
