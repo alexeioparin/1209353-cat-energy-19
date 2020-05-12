@@ -38,13 +38,11 @@
   align-items: center;
   padding: 22px 0;
 
-  &:hover path,
-  &:hover circle {
+  &:hover svg {
     fill: #68b738;
   }
 
-  &:active path,
-  &:active circle {
+  &:active svg {
     opacity: 0.3;
   }
 }
@@ -56,7 +54,11 @@
   color: #444444;
   text-decoration: none;
   margin-right: 23px;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
+}
+
+.page-footer__svg {
+  fill: #666666;
 }
 
 @media (min-width: @mid-size) {
@@ -79,12 +81,17 @@
     padding-right: 15px;
   }
 
+  .page-footer__bottom-academy {
+    margin-right: 14px;
+    margin-bottom: 5px;
+  }
+
   .page-footer__bottom {
     padding-top: 0;
 
     svg {
-      width: 27px;
-      height: 34px;
+      width: 35px;
+      height: 45px;
     }
   }
 }
