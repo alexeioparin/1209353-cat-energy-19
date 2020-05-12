@@ -13,16 +13,15 @@
   a {
     display: flex;
     align-items: center;
-  }
+    color: #666666;
 
-  &:hover path,
-  &:hover circle {
-    fill: #68b738;
-  }
+    &:hover {
+      color: #68b738;
+    }
 
-  &:active path,
-  &:active circle {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   span {
@@ -33,6 +32,10 @@
     margin-left: 6.5%;
     margin-right: 7.5%;
   }
+}
+
+.social-list__svg {
+  fill: currentColor;
 }
 
 @media (min-width: @mid-size) {
