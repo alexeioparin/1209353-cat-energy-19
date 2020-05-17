@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div class="" style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="wrapper wrapper--flex wrapper--header">
         <div class="page-header__top page-header__top--nojs">
@@ -149,24 +152,24 @@
         <ul class="social-list page-footer__social">
           <li class="social-list__item social-list__item--vk">
             <a href="#">
-              <svg class="svg__vk" width="22" height="12"  viewBox="0 0 22 12">
-                <use xlink:href="img/sprite.svg#vk" ></use>
+              <svg class="social-list__svg" width="22" height="12"  viewBox="0 0 22 12">
+                <use xlink:href="#icon-vk" ></use>
               </svg>
               <span>vkontakte</span>
             </a>
           </li>
           <li class="social-list__item social-list__item--insta">
             <a href="#">
-              <svg class="svg__insta" width="16" height="16" viewBox="0 0 16.1 16">
-                <use xlink:href="img/sprite.svg#insta" ></use>
+              <svg class="social-list__svg" width="16" height="16" viewBox="0 0 16.1 16">
+                <use xlink:href="#icon-insta" ></use>
               </svg>
               <span>instagram</span>
             </a>
           </li>
           <li class="social-list__item social-list__item--fb">
             <a href="#">
-              <svg class="svg__fb" width="10" height="19"  viewBox="0 0 10 19">
-                <use xlink:href="img/sprite.svg#fb" ></use>
+              <svg class="social-list__svg" width="10" height="19"  viewBox="0 0 10 19">
+                <use xlink:href="#icon-fb" ></use>
               </svg>
               <span>facebook</span>
             </a>
@@ -175,8 +178,8 @@
         <div class="page-footer__bottom">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__bottom-academy">HTML Academy</a>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__bottom-icon">
-            <svg class="svg__htmlacademy" viewBox="0 0 50 60" width="35" height="40">
-              <use xlink:href="img/sprite.svg#htmlacademy" ></use>
+            <svg class="page-footer__svg" viewBox="0 0 50 60" width="35" height="40">
+              <use xlink:href="#icon-htmlacademy" ></use>
             </svg>
           </a>
         </div>
