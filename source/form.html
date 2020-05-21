@@ -85,13 +85,19 @@
         <div class="wrapper">
           <fieldset class="main-form__block-contacts main-form__block-flex">
             <legend class="main-form__legend">Контактные данные (владельца кота)</legend>
-            <label class="main-form__label">
+            <label class="main-form__label main-form__label--mail">
               E-mail:*
               <input type="email" name="email" value="" class="main-form__input main-form__input--mail" placeholder="kuklachev@gmail.com" required>
+              <svg viewBox="0 0 17 13" class="main-form__icon main-form__icon--mail">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
             </label>
-            <label  class="main-form__label">
+            <label  class="main-form__label main-form__label--tel">
               Телефон:*
               <input type="tel" name="tel" value="" class="main-form__input main-form__input--tele" placeholder="8 (960) 900-60-90" pattern="[0-9]{11}" required>
+              <svg viewBox="0 0 20 20" class="main-form__icon main-form__icon--tel">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
             </label>
           </fieldset>
           <fieldset class="main-form__block-comment">

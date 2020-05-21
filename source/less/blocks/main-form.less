@@ -142,6 +142,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
+  position: relative;
 
   &--radio {
     justify-content: flex-start;
@@ -154,6 +155,10 @@
       border: 1px solid #cdcdcd;
       border-radius: 50%;
       margin-right: 15px;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -168,6 +173,10 @@
       border: 1px solid #cdcdcd;
       margin-right: 17px;
     }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -178,7 +187,25 @@
   flex-grow: 1;
   margin-left: 15px;
   padding-left: 14px;
+  position: relative;
 
+  &:focus {
+    outline: 1px solid #444444;
+    border: 1px solid #444444;
+
+    & + .main-form__icon {
+      fill: #68b738;
+    }
+  }
+
+  &:invalid {
+    outline: 1px solid #ff8282;
+    border: 1px solid #ff8282;
+
+    & + .main-form__icon {
+      fill: #ff8282;
+    }
+  }
 
   &::placeholder {
     text-transform: uppercase;
@@ -187,19 +214,31 @@
     font-family: "Oswald", "Open Sans", sans-serif;
   }
 
+  &--tele {
+    padding-right: 40px;
+    margin-left: 10px;
+  }
+
   &--mail {
-    background: url("../img/icon-mail.svg") no-repeat right 15px bottom 50%;
-    background-size: 18px auto;
     padding-right: 40px;
     padding-left: 13px;
     margin-left: 12px;
   }
+}
 
-  &--tele {
-    background: url("../img/icon-phone.svg") no-repeat right 12px bottom 50%;
-    background-size: 21px auto;
-    padding-right: 40px;
-    margin-left: 10px;
+.main-form__icon {
+  position: absolute;
+
+  &--mail {
+    width: 18px;
+    height: 14px;
+    right: 15px;
+  }
+
+  &--tel {
+    width: 21px;
+    height: 21px;
+    right: 12px;
   }
 }
 
@@ -216,6 +255,11 @@
   width: 90%;
   height: 120px;
   resize: vertical;
+
+  &:focus {
+    outline: 1px solid #444444;
+    border: 1px solid #444444;
+  }
 
   &::placeholder {
     text-transform: uppercase;
@@ -240,7 +284,7 @@
 }
 
 .main-form__add {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Liberation Sans", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #444444;
@@ -304,20 +348,20 @@
     }
 
     &--mail {
-      background: url("../img/icon-mail.svg") no-repeat right 19px bottom 50%;
-      background-size: 18px auto;
       padding-right: 40px;
       padding-left: 19px;
       margin-left: 22px;
     }
 
     &--tele {
-      background: url("../img/icon-phone.svg") no-repeat right 16px bottom 50%;
-      background-size: 21px auto;
       padding-right: 40px;
       padding-left: 19px;
       margin-left: 17px;
     }
+  }
+
+  .main-form__icon {
+    right: 20px;
   }
 
   .main-form__block-radio {
@@ -593,6 +637,16 @@
     &--tele {
       margin-left: 13px;
       width: 71.5%;
+    }
+  }
+
+  .main-form__icon {
+    right: 54px;
+    top: 18px;
+
+    &--tel {
+      top: 15px;
+      right: 15px;
     }
   }
 
