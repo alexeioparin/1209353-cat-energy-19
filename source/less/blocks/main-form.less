@@ -13,7 +13,7 @@
   color: #111111;
   text-transform: uppercase;
   margin-bottom: 40px;
-  width: 230px;
+  width: 270px;
   padding: 0 20px;
   overflow: hidden;
   position: relative;
@@ -41,16 +41,14 @@
   padding-bottom: 8px;
 }
 
-.main-form__radio,
-.main-form__checkbox {
-  display: none;
-}
-
 .main-form__radio:checked + label::before {
   background-color: #68b738;
   box-shadow: 0 0 1px 8px #ffffff inset;
 }
 
+.main-form__radio:focus + label {
+  outline: 1px solid #5eaa2f;
+}
 
 .main-form__checkbox:checked + label::before {
   content: url("../img/icon-tick.svg");
@@ -59,16 +57,22 @@
   padding: 6px 4px 2px;
 }
 
+.main-form__checkbox:focus + label {
+  outline: 1px solid #5eaa2f;
+}
+
 .main-form__block-contacts {
   margin-bottom: 5px;
   border-bottom: none;
 
   legend {
     position: relative;
+    padding-right: 35%;
 
     &::after {
       position: absolute;
       content: "";
+      display: block;
       height: 3px;
       width: 50%;
       background-color: #68b738;
@@ -81,17 +85,20 @@
 .main-form__block-comment {
   border-bottom: none;
   padding-bottom: 28px;
+  position: relative;
 
   .main-form__legend {
     display: block;
     margin-top: 10px;
     position: relative;
+    width: 100%;
 
     &::after {
       position: absolute;
       content: "";
+      display: block;
       height: 3px;
-      width: 150%;
+      width: 120%;
       background-color: #68b738;
       top: 14px;
       right: -200px;
@@ -119,6 +126,7 @@
   &::after {
     position: absolute;
     content: "";
+    display: block;
     height: 3px;
     width: 100%;
     background-color: #68b738;
@@ -151,6 +159,7 @@
 
     &::before {
       content: "";
+      display: block;
       width: 28px;
       height: 28px;
       border: 1px solid #cdcdcd;
@@ -169,6 +178,7 @@
 
     &::before {
       content: "";
+      display: block;
       width: 28px;
       height: 28px;
       border: 1px solid #cdcdcd;
@@ -187,6 +197,7 @@
   line-height: 18px;
   border: 1px solid #cdcdcd;
   min-height: 40px;
+  height: 40px;
   width: 50%;
   flex-grow: 1;
   margin-left: 15px;
@@ -202,7 +213,7 @@
     }
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     outline: 1px solid #ff8282;
     border: 1px solid #ff8282;
 
@@ -214,8 +225,12 @@
   &::placeholder {
     text-transform: uppercase;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 40px;
     font-family: "Oswald", "Open Sans", sans-serif;
+  }
+
+  &:-ms-input-placeholder {
+    text-transform: uppercase;
   }
 
   &--tele {
@@ -237,12 +252,14 @@
     width: 18px;
     height: 14px;
     right: 15px;
+    bottom: 15px;
   }
 
   &--tel {
     width: 21px;
     height: 21px;
     right: 12px;
+    bottom: 12px;
   }
 }
 
@@ -272,6 +289,10 @@
     font-family: "Oswald", "Open Sans", sans-serif;
     color: #444444;
   }
+
+  &:-ms-input-placeholder {
+    text-transform: uppercase;
+  }
 }
 
 .main-form__bottom {
@@ -297,7 +318,7 @@
 
 @media (min-width: @mid-size) {
   .main-form {
-    padding-bottom: 70px;
+    padding-bottom: 72px;
   }
 
   .main-form__top {
@@ -317,7 +338,7 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;
-    width: 325px;
+    width: 385px;
     padding: 0 30px;
     padding-top: 30px;
   }
@@ -348,7 +369,7 @@
 
     &::placeholder {
       font-size: 20px;
-      line-height: 20px;
+      line-height: 48px;
     }
 
     &--mail {
@@ -366,6 +387,14 @@
 
   .main-form__icon {
     right: 20px;
+
+    &--mail {
+      bottom: 18px;
+    }
+
+    &--tel {
+      bottom: 15px;
+    }
   }
 
   .main-form__block-radio {
@@ -409,6 +438,7 @@
       font-size: 36px;
       line-height: 36px;
       margin-bottom: 77px;
+      padding-right: 0;
 
       &::before {
         position: absolute;
@@ -445,20 +475,20 @@
         position: absolute;
         content: "";
         height: 3px;
-        width: 30%;
+        width: 20%;
         background-color: #68b738;
         top: 22px;
-        left: -94px;
+        left: -175px;
       }
 
       &::after {
         position: absolute;
         content: "";
         height: 3px;
-        width: 350%;
+        width: 100%;
         background-color: #68b738;
         top: 22px;
-        right: -670px;
+        right: -220px;
       }
     }
   }
@@ -577,8 +607,9 @@
   }
 
   .main-form__legend-title {
-    padding: 0 calc(40px + (100% - 1300px) / 2);
+    padding: 0;
     padding-top: 30px;
+    display: block;
   }
 
   .main-form__block-radio {
@@ -661,19 +692,20 @@
 
     .main-form__legend {
       &::before {
-        left: -150px;
-        width: 60%;
+        left: -420px;
+        width: 30%;
       }
 
       &::after {
-        width: 800%;
-        right: -1478px;
+        width: 100%;
+        right: -220px;
       }
     }
   }
 
   .main-form__textarea {
     width: 97%;
+    border-left-width: 2px;
   }
 
   .main-form__block-checkbox {

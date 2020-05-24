@@ -8,7 +8,7 @@
     <script>
       document.createElement( "picture" );
     </script>
-    <script src="picturefill.js" async></script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <div class="svg-sprite">
@@ -17,14 +17,14 @@
     <header class="page-header">
       <div class="wrapper wrapper--flex wrapper--header">
         <div class="page-header__top page-header__top--nojs">
-          <a href="index.html" class="page-header__logo">
+          <a href="index.html" class="page-header__logo" aria-label="Логотип Кэт энерджи">
             <picture>
               <source media="(min-width:1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
               <img src="img/logo-mobile.svg" alt="" width="191" height="39" class="page-header__img">
             </picture>
           </a>
-          <button type="button" name="button" class="page-header__menu-button page-header__menu-button--nojs page-header__menu-button--closed"></button>
+          <button type="button" name="button" class="page-header__menu-button page-header__menu-button--nojs page-header__menu-button--closed" aria-label="Открыть меню"></button>
         </div>
       </div>
       <nav class="page-nav page-nav--nojs">
@@ -71,15 +71,15 @@
           <legend class="visually-hidden">Тип диеты</legend>
             <div class="wrapper wrapper--form">
               <div class="main-form__block-wrapper">
-                <input type="radio" name="diet" value="slim" id="radio1" checked class="main-form__radio">
+                <input type="radio" name="diet" value="slim" id="radio1" checked class="main-form__radio visually-hidden">
                 <label for="radio1" class="main-form__label main-form__label--radio">Похудение</label>
               </div>
               <div class="main-form__block-wrapper">
-                <input type="radio" name="diet" value="slim" id="radio2" class="main-form__radio">
+                <input type="radio" name="diet" value="slim" id="radio2" class="main-form__radio visually-hidden">
                 <label for="radio2" class="main-form__label main-form__label--radio">Набор массы</label>
               </div>
               <div class="main-form__block-wrapper">
-                <input type="radio" name="diet" value="slim" id="radio3" class="main-form__radio">
+                <input type="radio" name="diet" value="slim" id="radio3" class="main-form__radio visually-hidden">
                 <label for="radio3" class="main-form__label main-form__label--radio">Не знаю (нужен ваш совет)</label>
               </div>
             </div>
@@ -91,14 +91,14 @@
             <label class="main-form__label main-form__label--mail">
               E-mail:*
               <input type="email" name="email" value="" class="main-form__input main-form__input--mail" placeholder="kuklachev@gmail.com" required>
-              <svg viewBox="0 0 17 13" class="main-form__icon main-form__icon--mail">
+              <svg viewBox="0 0 17 13" width="18" height="14" class="main-form__icon main-form__icon--mail">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </label>
             <label  class="main-form__label main-form__label--tel">
               Телефон:*
               <input type="tel" name="tel" value="" class="main-form__input main-form__input--tele" placeholder="8 (960) 900-60-90" pattern="[0-9]{3,}" required>
-              <svg viewBox="0 0 20 20" class="main-form__icon main-form__icon--tel">
+              <svg viewBox="0 0 20 20" width="21" height="21" class="main-form__icon main-form__icon--tel">
                 <use xlink:href="#icon-phone"></use>
               </svg>
             </label>
@@ -110,19 +110,19 @@
           <section class="main-form__block-checkbox">
             <h2 class="main-form__title">Дополнительно</h2>
             <div class="main-form__block-wrapper">
-              <input type="checkbox" name="check1" value="" id="check1" class="main-form__checkbox" checked>
+              <input type="checkbox" name="check1" value="" id="check1" class="main-form__checkbox visually-hidden" checked>
               <label for="check1" class="main-form__label main-form__label--checkbox">Сахарозаменитель</label>
             </div>
             <div class="main-form__block-wrapper">
-              <input type="checkbox" name="check2" value="" id="check2" class="main-form__checkbox">
+              <input type="checkbox" name="check2" value="" id="check2" class="main-form__checkbox visually-hidden">
               <label for="check2" class="main-form__label main-form__label--checkbox">Питьевая вода</label>
             </div>
             <div class="main-form__block-wrapper">
-              <input type="checkbox" name="check3" value="" id="check3" class="main-form__checkbox">
+              <input type="checkbox" name="check3" value="" id="check3" class="main-form__checkbox visually-hidden">
               <label for="check3" class="main-form__label main-form__label--checkbox">Молоко</label>
             </div>
             <div class="main-form__block-wrapper">
-              <input type="checkbox" name="check4" value="" id="check4" class="main-form__checkbox">
+              <input type="checkbox" name="check4" value="" id="check4" class="main-form__checkbox visually-hidden">
               <label for="check4" class="main-form__label main-form__label--checkbox">Витамины</label>
             </div>
           </section>
@@ -135,7 +135,7 @@
       <div class="page-map page-map--form">
         <div class="wrapper">
           <h2 class="page-map__title visually-hidden">Компания расположена по адресу</h2>
-          <div class="page-map__info">
+          <div class="page-map__info page-map__info--map">
             <p class="page-map__invite">приглашаем<br/>к сотрудничеству дилеров!</p>
             <p class="page-map__address"><span>ул. Большая Конюшенная, д. 19/8</span> <span>Санкт-Петербург</span></p>
           </div>
@@ -156,7 +156,7 @@
     </main>
     <footer class="page-footer">
       <div class="wrapper wrapper--center wrapper--flex">
-        <a href="#" class="page-footer__logo">
+        <a href="#" class="page-footer__logo" aria-label="Логотип кэт энерджи">
           <img src="img/logo-footer.svg" alt="" width="128" height="24">
         </a>
         <ul class="social-list page-footer__social">
@@ -165,7 +165,7 @@
               <svg class="social-list__svg" width="22" height="12"  viewBox="0 0 22 12">
                 <use xlink:href="#icon-vk" ></use>
               </svg>
-              <span>vkontakte</span>
+              <span class="visually-hidden">vkontakte</span>
             </a>
           </li>
           <li class="social-list__item social-list__item--insta">
@@ -173,7 +173,7 @@
               <svg class="social-list__svg" width="16" height="16" viewBox="0 0 16.1 16">
                 <use xlink:href="#icon-insta" ></use>
               </svg>
-              <span>instagram</span>
+              <span class="visually-hidden">instagram</span>
             </a>
           </li>
           <li class="social-list__item social-list__item--fb">
@@ -181,14 +181,14 @@
               <svg class="social-list__svg" width="10" height="19"  viewBox="0 0 10 19">
                 <use xlink:href="#icon-fb" ></use>
               </svg>
-              <span>facebook</span>
+              <span class="visually-hidden">facebook</span>
             </a>
           </li>
         </ul>
         <div class="page-footer__bottom">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__bottom-academy">HTML Academy</a>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__bottom-icon">
-            <svg class="page-footer__svg" viewBox="0 0 50 60" width="35" height="40">
+            <svg class="page-footer__svg" viewBox="0 0 30 38" width="27" height="34">
               <use xlink:href="#icon-htmlacademy" ></use>
             </svg>
           </a>
