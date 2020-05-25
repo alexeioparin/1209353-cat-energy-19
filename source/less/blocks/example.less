@@ -156,12 +156,13 @@
 
 @media (min-width: @max-size) {
   .example {
-    background: linear-gradient(0deg, #f2f2f2 77%, #ffffff 77%);
+    background: linear-gradient(0deg, #f2f2f2 69.5%, #ffffff 69.5%);
     display: flex;
     justify-content: space-between;
     border: none;
     padding-top: 10px;
     padding-bottom: 23px;
+    margin: 0 auto;
   }
 
   .example__wrapper {
@@ -201,5 +202,11 @@
 
   .example__indicator-value {
     padding-bottom: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .example__wrapper {
+    padding-left: 110px;
   }
 }
